@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 940px) and (max-height: 500px){
+    div#box {
+        display: block;
+    }
+
+    div.body {
+        width: 95%;
+        margin: 10px auto 10px auto;
+    }
+
+    div.center {
+        height: 100%;
+    }
+
+    div.center > div.more {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    div#box {
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+body {
+    margin: 0px;
+}
+
+div.body {
+    max-width: 750px;
+    height: 480px;
+    display: flex;
+}
+
+div.center > div.more {
+    width: 70%;
+    height: 39px;
+}
+
+div.center > div.more:hover {
+    background: #ffffffbe;
+    backdrop-filter: blur(10px);
+    transition: 500ms;
+}
+
+div.center > div.more > a:hover {
+    text-shadow: 1px 1px 1px #00000038;
+}
+
+div.sedan {
+    border-radius: 10px 0px 0px 10px;
+}
+
+div.luxury {
+    border-radius: 0px 10px 10px 0px;
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) and (max-width: 1040px) {
+    body {
+        margin: 0px;
+    }
+
+    div#box {
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    div.body {
+        width: 90%;
+        height: 520px;
+        display: flex;
+    }
+
+    div.sedan {
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    div.luxury {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    div.center > div.more {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    div#box {
+        width: 97%;
+    }
+
+    div.center {
+        height: 430px;
+    }
+
+    div.center > div.more {
+        width: 75%;
+        height: 38px;
+    }
+}
